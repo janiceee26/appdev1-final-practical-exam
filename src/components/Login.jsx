@@ -49,7 +49,7 @@ function Login() {
           </div>
 
           <p className={styles.bottomText}>
-            Have an account? <a href="#" className={styles.signIn}>Sign In</a>
+            Don’t have an account? <a href="#" className={styles.signIn}>Sign Up</a>
           </p>
         </div>
       </div>
