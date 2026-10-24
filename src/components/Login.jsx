@@ -13,28 +13,24 @@ function Login() {
 
           <form className={styles.form}>
             <div className={styles.field}>
-              <label htmlFor="name" className={styles.label}>Name</label>
-              <input type="text" id="name" placeholder="Enter your name" className={styles.input} />
-            </div>
-
-            <div className={styles.field}>
               <label htmlFor="email" className={styles.label}>Email address</label>
               <input type="email" id="email" placeholder="Enter your email" className={styles.input} />
             </div>
 
             <div className={styles.field}>
-              <label htmlFor="password" className={styles.label}>Password</label>
+              <div className={styles.labelRow}>
+                <label htmlFor="password" className={styles.label}>Password</label>
+                <a href="#" className={styles.forgot}>forgot password</a>
+              </div>
               <input type="password" id="password" placeholder="Name" className={styles.input} />
             </div>
 
             <div className={styles.checkbox}>
-              <input type="checkbox" id="terms" />
-              <label htmlFor="terms">
-                I agree to the <a href="#" className={styles.link}>terms & policy</a>
-              </label>
+              <input type="checkbox" id="remember" />
+              <label htmlFor="remember">Remember for 30 days</label>
             </div>
 
-            <button type="submit" className={styles.button}>Signup</button>
+            <button type="submit" className={styles.button}>Login</button>
           </form>
 
           <div className={styles.divider}>
