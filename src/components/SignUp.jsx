@@ -1,3 +1,4 @@
+import { Input } from '@/components/ui/input'
 import styles from './SignUp.module.css'
 import blossomFlower from '../assets/blossom-flower.svg'
 import googleLogo from '../assets/icons-google-logo.svg'
@@ -13,17 +14,17 @@ function SignUp() {
           <form className={styles.form}>
             <div className={styles.field}>
               <label htmlFor="name" className={styles.label}>Name</label>
-              <input type="text" id="name" placeholder="Enter your name" className={styles.input} />
+              <Input type="text" id="name" placeholder="Enter your name" className={styles.input} />
             </div>
 
             <div className={styles.field}>
               <label htmlFor="email" className={styles.label}>Email address</label>
-              <input type="email" id="email" placeholder="Enter your email" className={styles.input} />
+              <Input type="email" id="email" placeholder="Enter your email" className={styles.input} />
             </div>
 
             <div className={styles.field}>
               <label htmlFor="password" className={styles.label}>Password</label>
-              <input type="password" id="password" placeholder="Name" className={styles.input} />
+              <Input type="password" id="password" placeholder="Name" className={styles.input} />
             </div>
 
             <div className={styles.checkbox}>
