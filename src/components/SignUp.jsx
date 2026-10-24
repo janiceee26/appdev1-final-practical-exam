@@ -7,6 +7,32 @@ function SignUp() {
       <div className={styles.left}>
         <div className={styles.content}>
           <h1 className={styles.title}>Get Started Now</h1>
+
+          <form className={styles.form}>
+            <div className={styles.field}>
+              <label htmlFor="name" className={styles.label}>Name</label>
+              <input type="text" id="name" placeholder="Enter your name" className={styles.input} />
+            </div>
+
+            <div className={styles.field}>
+              <label htmlFor="email" className={styles.label}>Email address</label>
+              <input type="email" id="email" placeholder="Enter your email" className={styles.input} />
+            </div>
+
+            <div className={styles.field}>
+              <label htmlFor="password" className={styles.label}>Password</label>
+              <input type="password" id="password" placeholder="Name" className={styles.input} />
+            </div>
+
+            <div className={styles.checkbox}>
+              <input type="checkbox" id="terms" />
+              <label htmlFor="terms">
+                I agree to the <a href="#" className={styles.link}>terms & policy</a>
+              </label>
+            </div>
+
+            <button type="submit" className={styles.button}>Signup</button>
+          </form>
         </div>
       </div>
 
