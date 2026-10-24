@@ -52,6 +52,7 @@
 }
 
 .input {
+  box-sizing: border-box;
   height: var(--control-height);
   padding: 0 var(--spacing-md);
   border: var(--border-width) solid var(--color-border);

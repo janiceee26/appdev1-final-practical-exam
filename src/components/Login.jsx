@@ -1,3 +1,4 @@
+import { Input } from '@/components/ui/input'
 import styles from './Login.module.css'
 import blossomFlower from '../assets/blossom-flower.svg'
 import googleLogo from '../assets/icons-google-logo.svg'
@@ -14,7 +15,7 @@ function Login() {
           <form className={styles.form}>
             <div className={styles.field}>
               <label htmlFor="email" className={styles.label}>Email address</label>
-              <input type="email" id="email" placeholder="Enter your email" className={styles.input} />
+              <Input type="email" id="email" placeholder="Enter your email" className={styles.input} />
             </div>
 
             <div className={styles.field}>
@@ -22,7 +23,7 @@ function Login() {
                 <label htmlFor="password" className={styles.label}>Password</label>
                 <a href="#" className={styles.forgot}>forgot password</a>
               </div>
-              <input type="password" id="password" placeholder="Name" className={styles.input} />
+              <Input type="password" id="password" placeholder="Name" className={styles.input} />
             </div>
 
             <div className={styles.checkbox}>
